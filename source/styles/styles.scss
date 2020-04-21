@@ -1,1 +1,116 @@
 @import "_reset";
+.btn {
+    border: white;
+    background-color: white;
+    padding: 10px 40px;
+
+}
+html body {
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+}
+#slider-1 {
+    background-color: rgb(133, 235, 133);
+    text-align: center;
+    height: 100vh;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.btn1 {
+    border: white;
+    background-color: white;
+    padding: 10px 40px;
+    position: absolute;
+    top: 800px;
+    left: 900px;
+   
+}
+
+.btn1:hover, .btn:hover {
+    background-color: grey;
+}
+
+#slider-1 h1 {
+    font-size: 40px;
+    position: absolute;
+    left: 750px;
+    margin-bottom: 200px;
+    animation-name: welcome;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes welcome {
+   from{
+    top: -90px;
+    left: 750px;
+
+   } 
+
+   to {
+    top: 40px;
+    left: 750px;
+   }
+}
+#slider-1 img {
+    margin-top: 150px;
+}
+#slider-1 p {
+position: absolute;
+left: 0;
+animation-name: paragraph;
+animation-timing-function: linear;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+    
+
+}
+
+@keyframes paragraph {
+from{
+top: 700px;
+left: -1800px;
+ 
+} 
+to {
+    top: 700px;
+    left: 400px; 
+}
+}
+
+
+// Slider 2 
+
+#slider-2 {
+    height: 100vh;
+    background-color: rgb(238, 186, 186);
+    text-align: center;
+}
+
+.btn-dark {
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.btn-dark:hover {
+    background-color: grey;
+}
+
+// Slider 3// Slider 3
+#slider-3 {
+    height: 100vh;
+    background-color: rgb(235, 183, 124);
+    text-align: center;
+}
+
+// Slider 4
+#slider-4 {
+    height: 100vh;
+    background-color: rgb(157, 124, 235);
+    text-align: center; 
+}
